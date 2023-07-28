@@ -484,7 +484,7 @@ for f in chain:
 if not (3^4 * imPAA[index]).is_zero() and (3^5 * imPAA[index]).is_zero():
     assert imPAA[index].curve().j_invariant() == E0.j_invariant()
     assert imPAA[index].curve().isogeny(imPAA[index]).codomain().j_invariant() == EA.j_invariant()
-    print("A generator of ker(phiA) is %",imPAA)
+    print("A generator of ker(phiA) is %",imPAA[index])
 else:
     # Algorithm 1 step 6
     # Map the points using the computed isogeny chain
@@ -494,5 +494,5 @@ else:
     if not (3^4 * imQAA[index]).is_zero() and (3^5 * imPAA[index]).is_zero():
         assert imQAA[index].curve().j_invariant() == E0.j_invariant()
         assert imQAA[index].curve().isogeny(imQAA[index]).codomain().j_invariant() == EA.j_invariant()
-        print("A generator of ker(phiA) is %",imQAA)
+        print("A generator of ker(phiA) is %",imQAA[index])
 
