@@ -473,7 +473,6 @@ if codomain[0].j_invariant() == E0.j_invariant():
 else:
     index = 1
 assert index != -1
-E0t = codomain[index]
 
 # Algorithm 1 step 4
 # Map the points using the computed isogeny chain
