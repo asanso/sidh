@@ -489,7 +489,7 @@ Ef= phi_f.domain()
 w0 = Q0.weil_pairing(R0,2^4)
 w1 = Q01.weil_pairing(R01,2^4)
 
-lam = discrete_log(w1,w0,2^15,operation='*')
+lam = discrete_log(w1,w0,2^4,operation='*')
 a = (lam^-1) % 2^4
 b = (a*3^2) % 2^4
 
